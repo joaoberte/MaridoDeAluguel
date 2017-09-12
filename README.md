@@ -1,6 +1,6 @@
 # Marido de Aluguel
 
-*Aplicação web para conectar clientes com prestadores de serviços.*
+*Aplicação web para .... .*
 	
 Desenvolvimento de Sistemas 2017/2 - Prof. Marcelo Yamaguti - PUCRS
 	
