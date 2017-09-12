@@ -4,7 +4,6 @@ Marido de Aluguel
 
 Desenvolvimento de Sistemas 2017/2 - Prof. Marcelo Yamaguti - PUCRS
 
-Roles	Name
 Gerente de Projeto	Ludgero Mascarenhas
 Analista	Ariel Nessi
 Arquiteto	João Vicente
