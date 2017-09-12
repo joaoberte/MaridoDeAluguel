@@ -1,14 +1,16 @@
-Marido de Aluguel
+# Marido de Aluguel
 
-// Colocar o que ira ser o software
-
-Desenvolvimento de Sistemas 2017/2 - Prof. Marcelo Yamaguti - PUCRS
-
-Gerente de Projeto	Ludgero Mascarenhas
-Analista	Ariel Nessi
-Arquiteto	João Vicente
-Desenvolvedor	Joao Berte
-Testador	Ludgero Mascarenhas
+2	*Aplicação web para conectar clientes com prestadores de serviços.*
+3	
+4	Desenvolvimento de Sistemas 2017/2 - Prof. Marcelo Yamaguti - PUCRS
+5	
+6	Roles | Name
+7	----- | -----
+8	Project Manager | Ludgero Mascarenhas
+9	Analyst | Ariel Nessi
+10	Architect | Joao Vicente
+11	Developer | Joao Berte
+12	Tester | Ludgero Mascarenhas
 
 
 
