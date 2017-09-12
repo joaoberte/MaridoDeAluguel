@@ -1,16 +1,16 @@
 # Marido de Aluguel
 
-2	*Aplicação web para conectar clientes com prestadores de serviços.*
-3	
-4	Desenvolvimento de Sistemas 2017/2 - Prof. Marcelo Yamaguti - PUCRS
-5	
-6	Roles | Name
-7	----- | -----
-8	Project Manager | Ludgero Mascarenhas
-9	Analyst | Ariel Nessi
-10	Architect | Joao Vicente
-11	Developer | Joao Berte
-12	Tester | Ludgero Mascarenhas
+	*Aplicação web para conectar clientes com prestadores de serviços.*
+	
+	Desenvolvimento de Sistemas 2017/2 - Prof. Marcelo Yamaguti - PUCRS
+	
+	Roles | Name
+	----- | -----
+	Project Manager | Ludgero Mascarenhas
+	Analyst | Ariel Nessi
+	Architect | Joao Vicente
+	Developer | Joao Berte
+	Tester | Ludgero Mascarenhas
 
 
 
