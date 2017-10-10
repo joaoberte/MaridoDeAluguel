@@ -1,0 +1,92 @@
+﻿@model IEnumerable<MaridoDeAluguel.Models.Category>
+
+
+<div class="header-list-group">
+    <a href="@Url.Action("Index", "AdItem")">
+        <img src="@Url.Content("~/Content/Images/")store-icon.png" alt="Virtual Store Icon" class="img-circle">
+        <p class="lead">Marido de Aluguel</p>
+    </a>
+</div>
+@*
+
+    <div class="list-group">
+
+        @foreach (var item in Model)
+        {
+            if (item.ParentCategory == null)
+            {
+                <a href="#" class="list-group-item">@Html.DisplayFor(modelItem => item.Name)</a>
+            }
+
+            @*Html.ActionLink("Edit", "Edit", new { id = item.Id })
+        }
+
+    </div>
+*@
+
+@*<div class="container2">
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#informática">Informática</a>
+                    </h4>
+                </div>
+                <div id="informática" class="panel-collapse collapse">
+                    <ul class="list-group">
+                        <li class="list-group-item">Acessórios</li>
+                        <li class="list-group-item">Jogos</li>
+                        <li class="list-group-item">Computadores</li>
+                        <li class="list-group-item">Notebook</li>
+                    </ul>
+                </div>
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#frufru">Cama, mesa e banho</a>
+                    </h4>
+                </div>
+                <div id="frufru" class="panel-collapse collapse">
+                    <ul class="list-group">
+                        <li class="list-group-item">Toalhas</li>
+                        <li class="list-group-item">Mesa</li>
+                        <li class="list-group-item">Banho</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+<div class="container2">
+    <div class="panel-group">
+        <div class="panel panel-default">
+            @foreach (var item in Model)
+            {
+                if (item.ParentCategory == null)
+                {
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+
+                            <a data-toggle="collapse" href="#@item.Id">@Html.DisplayFor(modelItem => item.Name)</a>
+
+                        </h4>
+                    </div>
+                    if (item.SubCategories.Any())
+                    {
+                        <div id="@item.Id" class="panel-collapse collapse">
+                            @foreach (var subitem in item.SubCategories)
+                            {
+
+                                <ul class="list-group">
+                                    @Html.ActionLink(subitem.Name, "Index", "AdItem", new { idCategorie = subitem.Id }, new { @class = "list-group-item" })
+                                </ul>
+
+                            }
+                        </div>
+                    }
+
+                }
+            }
+        </div>
+    </div>
+</div>

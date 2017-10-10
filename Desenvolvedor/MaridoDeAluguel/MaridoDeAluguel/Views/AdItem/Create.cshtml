@@ -1,0 +1,93 @@
+﻿@model MaridoDeAluguel.ViewModel.AdItemFormViewModel
+@{
+    ViewBag.Title = "Create";
+
+}
+<script language="javascript" type="text/javascript">
+    function GetCity(_stateId) {
+        var procemessage = "<option value='0'> Por favor aguarde...</option>";
+        $("#ddlcity").html(procemessage).show();
+        var url = "/AdItem/GetCityByStateId/";
+
+        $.ajax({
+            url: url,
+            data: { stateid: _stateId },
+            cache: false,
+            type: "POST",
+            success: function (data) {
+                var markup = "<option value='0'>Selecione a cidade</option>";
+                for (var x = 0; x < data.length; x++) {
+                    markup += "<option value=" + data[x].Value + ">" + data[x].Text + "</option>";
+                }
+                $("#ddlcity").html(markup).show();
+            },
+            error: function (reponse) {
+                alert("error : " + reponse);
+            }
+        });
+
+    }
+</script>
+<h3>Informações do Anúncio</h3>
+<h5>As informações marcadas com asterisco (*) são obrigatórias</h5>
+@using (Html.BeginForm("Create", "AdItem", FormMethod.Post, new { encType = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+
+        @Html.LabelFor(m => m.Title)
+        @Html.TextBoxFor(m => m.Title, new { @placeholder = "Crie um título", @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Title, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Description)
+        @Html.TextAreaFor(m => m.Description, new { @placeholder = "Entre com a descrição do seu anúncio", @rows = "6", @cols = "50", @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.flagNew)
+        @Html.DropDownListFor(m => m.flagNew, new SelectList(
+        new[]
+        {
+            new { Value = "false", Text = "Usado" },
+            new { Value = "true", Text = "Novo" },
+
+        },
+        "Value",
+        "Text"
+    ), new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.flagNew, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Price)
+        @Html.TextBoxFor(m => m.Price, new { @type = "number", @placeholder = "Entre com o valor até 100 reais", @max = "100", @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Price, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.State)
+        @Html.DropDownListFor(m => m.State, new SelectList(Model.States, "Id", "Name"), "Selecione o Estado", new { @id = "ddlstate", @onchange = "javascript:GetCity(this.value);", @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.State, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.City)
+        @Html.DropDownListFor(m => m.City, new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name"), "Selecione uma cidade", new { @id = "ddlcity", @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.City, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.DisplayNameFor(model => model.ImageUpload)
+        @Html.TextBoxFor(m => m.ImageUpload, new { type = "file", name = "Files" })
+    </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Category)
+            @Html.DropDownListFor(m => m.Category, new SelectList(Model.Categories, "Id", "Name"), "Escolha uma categoria", new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Category, "", new { @class = "text-danger" })
+        </div>
+    <button type="submit" class="btn btn-info btn2 btn-lg ">Criar Anúncio</button>
+
+}
+
