@@ -157,7 +157,7 @@ namespace MaridoDeAluguel.Controllers
                 };
                 
                 var result = await UserManager.CreateAsync(user, model.Password);
-                UserManager.AddToRoles(user.Id, "User");
+                UserManager.AddToRoles(user.Id, "Contratante");
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);

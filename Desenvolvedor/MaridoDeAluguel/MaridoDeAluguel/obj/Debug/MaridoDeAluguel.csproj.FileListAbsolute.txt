@@ -11,9 +11,6 @@ C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAlugu
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\roslyn\vbc.exe
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\roslyn\VBCSCompiler.exe
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\LojaVirtual.dll.config
-C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\LojaVirtual.dll
-C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\LojaVirtual.pdb
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\Antlr3.Runtime.dll
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\AutoMapper.dll
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\EntityFramework.dll
@@ -87,6 +84,7 @@ C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAlugu
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.csprojResolveAssemblyReference.cache
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.Migrations.inicial.resources
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.Migrations.Seed_Category.resources
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.Migrations.Seed_States.resources
@@ -97,5 +95,8 @@ C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAlugu
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.Migrations.updateAdItemForeignKeys.resources
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.csproj.GenerateResource.Cache
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.csproj.CoreCompileInputs.cache
-C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\LojaVirtual.dll
-C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\LojaVirtual.pdb
+C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\MaridoDeAluguel.dll.config
+C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\MaridoDeAluguel.dll
+C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\MaridoDeAluguel.pdb
+C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.dll
+C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.pdb

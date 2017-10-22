@@ -59,7 +59,7 @@ namespace MaridoDeAluguel.Controllers
         }
 
         // GET: AdItem
-        [Authorize(Roles = "User")]
+        [Authorize(Roles = "Contratante")]
         public ActionResult Create()
         {
             var viewModel = new AdItemFormViewModel
@@ -72,7 +72,7 @@ namespace MaridoDeAluguel.Controllers
         }
 
 
-        [Authorize(Roles = "User")]
+        [Authorize(Roles = "Contratante")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(AdItemFormViewModel viewModel)
@@ -144,14 +144,14 @@ namespace MaridoDeAluguel.Controllers
             return View(adItem);
         }
 
-        [Authorize(Roles = "User")]
+        [Authorize(Roles = "Contratante")]
         public ActionResult Buy(int id)
         {
             AdItem adItem = _context.AdItens.Where(a => a.Id == id).FirstOrDefault();
             return View(adItem);
         }
 
-        [Authorize(Roles = "User")]
+        [Authorize(Roles = "Contratante")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Buy(AdItem adItem)
@@ -169,7 +169,7 @@ namespace MaridoDeAluguel.Controllers
             return RedirectToAction("Index");
         }
 
-        [Authorize(Roles = "User")]
+        [Authorize(Roles = "Contratante")]
         public ActionResult SellAdItens()
         {
             string UserId = User.Identity.GetUserId();
@@ -178,7 +178,7 @@ namespace MaridoDeAluguel.Controllers
             return View(adItens);
         }
 
-        [Authorize(Roles = "User")]
+        [Authorize(Roles = "Contratante")]
         public ActionResult Sell(int id)
         {
             AdItem adItem = _context.AdItens.Single(a => a.Id == id);
@@ -186,7 +186,7 @@ namespace MaridoDeAluguel.Controllers
             return View(adItem);
         }
 
-        [Authorize(Roles = "User")]
+        [Authorize(Roles = "Contratante")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Sell(AdItem adItem)
@@ -201,7 +201,7 @@ namespace MaridoDeAluguel.Controllers
             return RedirectToAction("Index");
         }
 
-        [Authorize(Roles = "User")]
+        [Authorize(Roles = "Contratante")]
         public ActionResult CancelSell(int id)
         {
             AdItem adItem = _context.AdItens.Single(a => a.Id == id);
@@ -215,7 +215,7 @@ namespace MaridoDeAluguel.Controllers
             return RedirectToAction("Index");
         }
 
-        [Authorize(Roles = "User")]
+        [Authorize(Roles = "Contratante")]
         public ActionResult MyAdItens(string searchString, int? page, string sortOrder)
         {
             string UserId = User.Identity.GetUserId();
@@ -271,7 +271,7 @@ namespace MaridoDeAluguel.Controllers
             return RedirectToAction("VerifyAdItens");
         }
 
-        [Authorize(Roles = "User, Admin")]
+        [Authorize(Roles = "Contratante, Admin")]
         public ActionResult RemoveAdItem(int id)
         {
 

@@ -10,7 +10,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="true">@User.Identity.GetUserName() <span class="caret"></span></a>
             <ul class="dropdown-menu">
                 <li>@Html.ActionLink("Alterar Perfil", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })</li>
-                @if (User.IsInRole("User"))
+                @if (User.IsInRole("Contratante"))
                 {
                     <li>@Html.ActionLink("Meus Anúncios", "MyAdItens", "AdItem")</li>
                     <li>@Html.ActionLink("Pedidos de Compra", "SellAdItens", "AdItem")</li>

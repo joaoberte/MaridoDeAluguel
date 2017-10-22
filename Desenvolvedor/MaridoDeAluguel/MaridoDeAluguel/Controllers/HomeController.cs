@@ -12,6 +12,7 @@ namespace MaridoDeAluguel.Controllers
         {
             _context = new ApplicationDbContext();
         }
+
         public ActionResult Index()
         {
             return View();
