@@ -14,5 +14,21 @@ namespace MaridoDeAluguelTests.Controllers
             var pagina = controller.Index();
             Assert.IsInstanceOfType(pagina, typeof(ViewResult));
         }
+
+        [TestMethod]
+        public void TesteRetornoDePaginaAbout()
+        {
+            var controller = new HomeController();
+            var pagina = controller.About();
+            Assert.IsInstanceOfType(pagina, typeof(ViewResult));
+        }
+
+        [TestMethod]
+        public void TesteRetornoDePaginaContact()
+        {
+            var controller = new HomeController();
+            var pagina = controller.Contact();
+            Assert.IsInstanceOfType(pagina, typeof(ViewResult));
+        }
     }
 }

@@ -35,7 +35,7 @@ namespace MaridoDeAluguel.Controllers
         [AcceptVerbs(HttpVerbs.Get | HttpVerbs.Post)]
         public ActionResult GetPageCategories()
         {
-            var categories = _context.Categories.ToList(); //Get your categs
+            var categories = _context.Categories.ToList(); //Busca lista de categorias
             return PartialView(@"~/Views/Shared/listmenu.cshtml", categories);
         }
     }
