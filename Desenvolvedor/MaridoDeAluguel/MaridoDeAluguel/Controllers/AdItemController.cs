@@ -36,14 +36,10 @@ namespace MaridoDeAluguel.Controllers
 
             int pageSize = 6;
             int pageNumber = (page ?? 1);
-            ViewBag.PriceSortParm = String.IsNullOrEmpty(sortOrder) ? "price_asc" : "";
             ViewBag.DateSortParm = sortOrder == "Date" ? "date_desc" : "Date";
 
             switch (sortOrder)
             {
-                case "price_asc":
-                    adItens = adItens.OrderBy(s => s.Price).ToList();
-                    break;
                 case "Date":
                     adItens = adItens.OrderBy(s => s.PostedAt).ToList();
                     break;
@@ -93,10 +89,9 @@ namespace MaridoDeAluguel.Controllers
                     Title = viewModel.Title,
                     CityId = viewModel.City,
                     Description = viewModel.Description,
-                    flagNew = viewModel.flagNew,
+                    flagType = viewModel.flagType,
                     StateId = viewModel.State,
-                    Price = viewModel.Price,
-                    PostedAt = viewModel.PostedAt
+                    PostedAt = DateTime.Now
                 };
                 var file = viewModel.ImageUpload[0];
                 if (!(file == null || file.ContentLength == 0))
@@ -228,14 +223,10 @@ namespace MaridoDeAluguel.Controllers
             }
             int pageSize = 6;
             int pageNumber = (page ?? 1);
-            ViewBag.PriceSortParm = String.IsNullOrEmpty(sortOrder) ? "price_asc" : "";
             ViewBag.DateSortParm = sortOrder == "Date" ? "date_desc" : "Date";
 
             switch (sortOrder)
             {
-                case "price_asc":
-                    adItens = adItens.OrderBy(s => s.Price).ToList();
-                    break;
                 case "Date":
                     adItens = adItens.OrderBy(s => s.PostedAt).ToList();
                     break;

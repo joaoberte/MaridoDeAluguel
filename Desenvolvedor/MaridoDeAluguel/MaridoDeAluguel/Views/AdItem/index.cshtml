@@ -25,7 +25,6 @@
 }
 <div class="row">
     <ul class="menu-sort-by">
-        <li>@Html.ActionLink("Ordenar por Preço", "Index", new { sortOrder = ViewBag.PriceSortParm }, new { @class = "sort-by" })</li>
         <li>@Html.ActionLink("Ordenar por Data", "Index", new { sortOrder = ViewBag.DateSortParm }, new { @class = "sort-by" })</li>
     </ul>
 </div>
@@ -67,7 +66,6 @@
                 }
                 <div class="caption">
                     <h3>@item.Title</h3>
-                    <p>Preço: R$ @item.Price</p>
                     <p>
                         @Html.ActionLink("Mais Detalhes", "Details", new { id = item.Id })
                         @if (User.Identity.GetUserId() != item.Owner.Id && item.Buyer == null)

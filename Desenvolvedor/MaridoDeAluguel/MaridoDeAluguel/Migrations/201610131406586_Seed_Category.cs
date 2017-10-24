@@ -6,33 +6,41 @@ namespace MaridoDeAluguel.Migrations
     {
         public override void Up()
         {
-            Sql("INSERT INTO Categories (Name) values ('Animais e Acessórios')");
-            Sql("INSERT INTO Categories (Name) values ('Músicas e Hobbies')");
-            Sql("INSERT INTO Categories (Name) values ('Moda e Beleza')");
-            Sql("INSERT INTO Categories (Name) values ('Bebês e Crianças')");
-            Sql("INSERT INTO Categories (Name) values ('Para a Casa')");
-            Sql("INSERT INTO Categories (Name) values ('Esportes')");
-            Sql("INSERT INTO Categories (Name) values ('Eletrônicos e Celulares')");
-            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Cachorros', 1)");
-            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Gatos', 1)");
-            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Peixes', 1)");
-            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Roedores', 1)");
-            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Instrumentos musicais', 2)");
-            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Livros', 2)");
-            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Antiguidades', 2)");
-            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Roupas e Calçados', 3)");
-            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Acessórios', 3)");
-            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Roupas', 4)");
-            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Brinquedos', 4)");
-            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Móveis', 5)");
-            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Acessórios esportivos', 6)");
-            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Jogos', 7)");
-            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Acessórios de celular', 7)");
+            Sql("INSERT INTO Categories (Name) values ('Assist. Técnica')");
+            Sql("INSERT INTO Categories (Name) values ('Reformas')");
+            Sql("INSERT INTO Categories (Name) values ('Serv. Domésticos')");
+            Sql("INSERT INTO Categories (Name) values ('Autos')");
+
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Ar Condicionado', 1)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Câmera', 1)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Celular', 1)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Computador', 1)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Geladeira', 1)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Vídeo Game', 1)");
+            
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Chaveiro', 2)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Decorador', 2)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Eletricista', 2)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Encanador', 2)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Pedreiro', 2)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Pintor', 2)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Vidraceiro', 2)");
+
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Babá', 3)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Cozinheira', 3)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Diarista', 3)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Limpeza Piscina', 3)");
+
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Alarme', 4)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Borracharia', 4)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Funilaria', 4)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Higienização', 4)");
+            Sql("INSERT INTO Categories (Name, ParentCategory_ID) values ('Mecânico', 4)");
         }
 
         public override void Down()
         {
-            Sql("DELETE FROM Categories WHERE ID in (1,2,3,4,5,6)");
+            Sql("DELETE FROM Categories WHERE ID in (1,2,3,4)");
         }
     }
 }

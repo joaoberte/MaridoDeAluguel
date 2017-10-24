@@ -20,17 +20,12 @@ namespace MaridoDeAluguel.ViewModel
         public string Title { get; set; }
 
         [Required]
-        [Display(Name = "Novo/Usado")]
-        public bool flagNew { get; set; }
+        [Display(Name = "Residencial/Empresarial")]
+        public bool flagType { get; set; }
 
 
         [Display(Name = "Descrição")]
         public string Description { get; set; }
-
-        [Required(ErrorMessage = "Preço é obrigatório")]
-        [Range(0, 100, ErrorMessage = "Somente é permitido valores até 100 reais e maiores que 0")]
-        [Display(Name = "Preço*")]
-        public double Price { get; set; }
 
         [Required(ErrorMessage = "É obrigatório selecionar a cidade")]
         [Display(Name = "Cidade*")]

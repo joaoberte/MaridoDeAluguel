@@ -17,12 +17,9 @@ namespace MaridoDeAluguel.Models
         public string Title { get; set; }
 
         [Required]
-        public bool flagNew { get; set; }
+        public bool flagType { get; set; }
 
         public string Description { get; set; }
-
-        [Required]
-        public double Price { get; set; }
 
         public virtual City City { get; set; }
 

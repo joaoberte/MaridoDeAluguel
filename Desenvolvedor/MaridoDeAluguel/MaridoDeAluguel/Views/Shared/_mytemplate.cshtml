@@ -43,6 +43,7 @@
                     @if (User.IsInRole("Admin"))
                     {
                         <li>@Html.ActionLink("Categorias", "Index", "Categories")</li>
+                        <li>@Html.ActionLink("Restauração", "Index", "BackUp")</li>
                     }
                 </ul>
                 @Html.Partial("_LoginPartial")

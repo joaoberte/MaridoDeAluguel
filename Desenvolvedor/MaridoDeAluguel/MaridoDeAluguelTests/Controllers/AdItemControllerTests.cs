@@ -11,7 +11,7 @@ namespace MaridoDeAluguelTests.Controllers
         public void TesteRetornoDePaginaIndex()
         {
             var controller = new AdItemController();
-            var pagina = controller.Index("chave", 1, 1, "price_asc");
+            var pagina = controller.Index("chave", 1, 1, "Date");
             Assert.IsInstanceOfType(pagina, typeof(ViewResult));
         }
 

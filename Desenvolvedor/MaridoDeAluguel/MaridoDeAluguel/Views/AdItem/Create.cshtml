@@ -46,24 +46,18 @@
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(m => m.flagNew)
-        @Html.DropDownListFor(m => m.flagNew, new SelectList(
+        @Html.LabelFor(m => m.flagType)
+        @Html.DropDownListFor(m => m.flagType, new SelectList(
         new[]
         {
-            new { Value = "false", Text = "Usado" },
-            new { Value = "true", Text = "Novo" },
+            new { Value = "false", Text = "Residencial" },
+            new { Value = "true", Text = "Empresarial" },
 
         },
         "Value",
         "Text"
     ), new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.flagNew, "", new { @class = "text-danger" })
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(m => m.Price)
-        @Html.TextBoxFor(m => m.Price, new { @type = "number", @placeholder = "Entre com o valor até 100 reais", @max = "100", @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Price, "", new { @class = "text-danger" })
+        @Html.ValidationMessageFor(m => m.flagType, "", new { @class = "text-danger" })
     </div>
 
     <div class="form-group">
