@@ -1,0 +1,36 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+    @Html.AntiForgeryToken()
+
+    <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="true">@User.Identity.GetUserName() <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li>@Html.ActionLink("Alterar Perfil", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })</li>
+                @if (User.IsInRole("Contratante"))
+                {
+                    <li>@Html.ActionLink("Meus Anúncios", "MyAdItens", "AdItem")</li>
+                    <li>@Html.ActionLink("Pedidos de Compra", "SellAdItens", "AdItem")</li>
+                }
+                @if (User.IsInRole("Admin"))
+                {
+                    <li>@Html.ActionLink("Validar Anúncios", "VerifyAdItens", "AdItem")</li>
+                }
+                <li role="separator" class="divider"></li>
+                <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+            </ul>
+        </li>
+
+    </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("Registrar-se", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}
