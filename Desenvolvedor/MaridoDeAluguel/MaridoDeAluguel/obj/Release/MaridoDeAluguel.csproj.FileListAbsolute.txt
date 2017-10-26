@@ -140,3 +140,4 @@ C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAlugu
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Release\MaridoDeAluguel.csproj.CoreCompileInputs.cache
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Release\MaridoDeAluguel.dll
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Release\MaridoDeAluguel.pdb
+C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Release\MaridoDeAluguel.csprojResolveAssemblyReference.cache

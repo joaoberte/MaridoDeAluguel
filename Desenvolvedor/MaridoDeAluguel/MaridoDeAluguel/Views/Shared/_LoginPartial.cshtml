@@ -13,7 +13,7 @@
                 @if (User.IsInRole("Contratante"))
                 {
                     <li>@Html.ActionLink("Meus Anúncios", "MyAdItens", "AdItem")</li>
-                    <li>@Html.ActionLink("Pedidos de Compra", "SellAdItens", "AdItem")</li>
+                    <li>@Html.ActionLink("Ofertas de Serviço", "SellAdItens", "AdItem")</li>
                 }
                 @if (User.IsInRole("Admin"))
                 {
