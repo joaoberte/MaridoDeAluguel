@@ -1,6 +1,7 @@
 ﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MaridoDeAluguel.Controllers;
+using MaridoDeAluguel.ViewModel;
 
 namespace MaridoDeAluguelTests.Controllers
 {
@@ -16,7 +17,7 @@ namespace MaridoDeAluguelTests.Controllers
         }
 
         [TestMethod]
-        public void TesteRListagemDaPaginaCreate()
+        public void TesteListagemDaPaginaCreate()
         {
             var controller = new AdItemController();
             var pagina = controller.Create();
@@ -24,7 +25,7 @@ namespace MaridoDeAluguelTests.Controllers
         }
 
         [TestMethod]
-        public void TesteRListagemDaPaginaDetails()
+        public void TesteListagemDaPaginaDetails()
         {
             var controller = new AdItemController();
             var pagina = controller.Details(1);

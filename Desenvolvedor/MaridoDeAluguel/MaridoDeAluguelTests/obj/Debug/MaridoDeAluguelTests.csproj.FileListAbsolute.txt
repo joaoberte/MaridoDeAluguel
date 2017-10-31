@@ -1,3 +1,5 @@
+C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguelTests\obj\Debug\MaridoDeAluguelTests.csprojResolveAssemblyReference.cache
+C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguelTests\obj\Debug\MaridoDeAluguelTests.csproj.CoreCompileInputs.cache
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguelTests\bin\Debug\ApplicationInsights.config
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguelTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguelTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
@@ -46,7 +48,5 @@ C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAlugu
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguelTests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguelTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguelTests\bin\Debug\PagedList.xml
-C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguelTests\obj\Debug\MaridoDeAluguelTests.csprojResolveAssemblyReference.cache
-C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguelTests\obj\Debug\MaridoDeAluguelTests.csproj.CoreCompileInputs.cache
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguelTests\obj\Debug\MaridoDeAluguelTests.dll
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguelTests\obj\Debug\MaridoDeAluguelTests.pdb
