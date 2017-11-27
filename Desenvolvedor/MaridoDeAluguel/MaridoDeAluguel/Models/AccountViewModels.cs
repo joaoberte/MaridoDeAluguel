@@ -89,6 +89,10 @@ namespace MaridoDeAluguel.Models
         [Display(Name = "Telefone")]
         public string Telefone { get; set; }
 
+        [Required]
+        [Display(Name = "Tipo")]
+        public bool Type { get; set; }
+
     }
 
     public class ResetPasswordViewModel

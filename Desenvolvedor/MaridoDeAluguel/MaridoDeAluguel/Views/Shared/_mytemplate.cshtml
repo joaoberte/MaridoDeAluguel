@@ -20,6 +20,10 @@
 
     <!-- Custom CSS -->
     <link href="@Url.Content("~/Content/MyTemplate/")css/shop-item.css" rel="stylesheet">
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
 </head>
 <body>
     <!-- Navigation -->
@@ -72,8 +76,7 @@
             </div>
 
         </div>
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
+
         @RenderSection("scripts", required: false)
 </body>
 </html>

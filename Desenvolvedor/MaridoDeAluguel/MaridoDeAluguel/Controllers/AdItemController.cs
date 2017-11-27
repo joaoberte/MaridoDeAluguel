@@ -4,6 +4,7 @@ using Microsoft.AspNet.Identity;
 using PagedList;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Web.Mvc;
@@ -139,14 +140,14 @@ namespace MaridoDeAluguel.Controllers
             return View(adItem);
         }
 
-        [Authorize(Roles = "Contratante")]
+        [Authorize(Roles = "FazTudo")]
         public ActionResult Buy(int id)
         {
             AdItem adItem = _context.AdItens.Where(a => a.Id == id).FirstOrDefault();
             return View(adItem);
         }
 
-        [Authorize(Roles = "Contratante")]
+        [Authorize(Roles = "FazTudo")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Buy(AdItem adItem)
@@ -261,6 +262,88 @@ namespace MaridoDeAluguel.Controllers
 
             return RedirectToAction("VerifyAdItens");
         }
+
+
+
+        [Authorize(Roles = "Contratante")]
+        public ActionResult Edit(int id)
+        {
+            AdItem adItem = _context.AdItens.Where(a => a.Id == id).FirstOrDefault();
+
+            var viewModel = new AdItemFormViewModel
+            {
+                IdAdItem = adItem.Id,
+                Title = adItem.Title,
+                Description = adItem.Description,
+                flagType = adItem.flagType,
+                State = adItem.StateId,
+                City = adItem.CityId,
+                Category = adItem.CategoryId,
+                States = _context.States.ToList(),
+                Cities = _context.Cities.Where(m => m.State.Id == adItem.StateId).ToList(),
+                Categories = _context.Categories.Where(c => c.ParentCategory != null).ToList()
+            };
+
+            return View(viewModel);
+        }
+
+
+        [Authorize(Roles = "Contratante")]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(AdItemFormViewModel viewModel)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    viewModel.States = _context.States.ToList();
+                    viewModel.Categories = _context.Categories.ToList();
+                    return View("Create", viewModel);
+                }
+
+                AdItem adItem = _context.AdItens.Single(a => a.Id == viewModel.IdAdItem);
+
+
+                adItem.CategoryId = viewModel.Category;
+                adItem.Title = viewModel.Title;
+                adItem.CityId = viewModel.City;
+                adItem.Description = viewModel.Description;
+                adItem.flagType = viewModel.flagType;
+                adItem.StateId = viewModel.State;
+
+                var file = viewModel.ImageUpload[0];
+                if (!(file == null || file.ContentLength == 0))
+                {
+
+                    var imagem = new Images
+                    {
+                        FileName = System.IO.Path.GetFileName(file.FileName),
+                        FileType = FileType.ProductImage,
+                        ContentType = file.ContentType
+                    };
+
+                    using (var reader = new System.IO.BinaryReader(file.InputStream))
+                    {
+                        imagem.Content = reader.ReadBytes(file.ContentLength);
+                    }
+                    adItem.Images = new List<Images> { imagem };
+                }
+
+                _context.Entry(adItem).State = EntityState.Modified;
+                _context.SaveChanges();
+            }
+            catch (RetryLimitExceededException /* dex */)
+            {
+                ModelState.AddModelError("", "Não Foi Possível atualizar as informações do anuncio.");
+            }
+
+
+            return RedirectToAction("MyAdItens", "AdItem");
+
+        }
+
+
 
         [Authorize(Roles = "Contratante, Admin")]
         public ActionResult RemoveAdItem(int id)

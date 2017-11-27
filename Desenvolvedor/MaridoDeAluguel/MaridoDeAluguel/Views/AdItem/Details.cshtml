@@ -41,7 +41,8 @@
             <h5>Anúncio criado em @Model.PostedAt.Value.ToShortDateString()</h5>
             @if (Model.Owner.Id == User.Identity.GetUserId())
             {
-                @Html.ActionLink("Apagar Anúncio", "RemoveAdItem", new { id = Model.Id }, new { @class = "btn btn-danger btn-lg", @style = "float:right" })
+                @Html.ActionLink("Editar", "Edit", new { id = Model.Id }, new { @class = "btn btn-default btn-lg" })
+                @Html.ActionLink("Apagar", "RemoveAdItem", new { id = Model.Id }, new { @class = "btn btn-danger btn-lg", @style = "float:right" })
             }
             else
             {

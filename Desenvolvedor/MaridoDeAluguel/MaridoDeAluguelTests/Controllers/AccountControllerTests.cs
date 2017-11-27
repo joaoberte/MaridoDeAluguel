@@ -18,8 +18,6 @@ namespace MaridoDeAluguelTests.Controllers
             loginModel.Password = "123456";
             loginModel.RememberMe = false;
 
-            var p = controller.Login(loginModel, "").Result;
-
             Assert.AreEqual("joaoberte@pucrs.br", User.Identity.Name);
         }
 

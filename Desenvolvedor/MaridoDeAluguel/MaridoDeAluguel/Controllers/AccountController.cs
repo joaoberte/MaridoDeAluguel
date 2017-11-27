@@ -83,7 +83,7 @@ namespace MaridoDeAluguel.Controllers
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Invalid login attempt.");
+                    ModelState.AddModelError("", "Senha ou Email Invalido.");
                     return View(model);
             }
         }
@@ -126,7 +126,7 @@ namespace MaridoDeAluguel.Controllers
                     return View("Lockout");
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Invalid code.");
+                    ModelState.AddModelError("", "Codigo Invalido.");
                     return View(model);
             }
         }
@@ -157,7 +157,13 @@ namespace MaridoDeAluguel.Controllers
                 };
                 
                 var result = await UserManager.CreateAsync(user, model.Password);
-                UserManager.AddToRoles(user.Id, "Contratante");
+
+                if(model.Type)
+                    UserManager.AddToRoles(user.Id, "Contratante");
+                else
+                    UserManager.AddToRoles(user.Id, "FazTudo");
+
+
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
