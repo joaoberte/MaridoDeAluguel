@@ -76,12 +76,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context\ContextoTests.cs" />
-    <Compile Include="Controllers\AccountControllerTests.cs" />
-    <Compile Include="Controllers\HomeControllerTests.cs" />
-    <Compile Include="Controllers\AdItemControllerTests.cs" />
-    <Compile Include="Controllers\CategoriesControllerTests.cs" />
+    <Compile Include="Tests\UC02UC03Tests.cs" />
+    <Compile Include="Tests\UC07Tests.cs" />
+    <Compile Include="Tests\UC04Tests.cs" />
+    <Compile Include="Tests\GeraisTests.cs" />
+    <Compile Include="Tests\UC09UC10Tests.cs" />
+    <Compile Include="Tests\UC16Tests.cs" />
+    <Compile Include="Tests\UC11Tests.cs" />
+    <Compile Include="Tests\UC17Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\UC05Tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

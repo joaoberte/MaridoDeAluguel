@@ -127,6 +127,7 @@ C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAlugu
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.csprojResolveAssemblyReference.cache
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.Migrations.inicial.resources
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.Migrations.Seed_Category.resources
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.Migrations.Seed_States.resources
@@ -140,4 +141,3 @@ C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAlugu
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.csproj.CoreCompileInputs.cache
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.dll
 C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.pdb
-C:\Users\João\GIT\Projetos\DesenVolvimento-Sistemas\Desenvolvedor\MaridoDeAluguel\MaridoDeAluguel\obj\Debug\MaridoDeAluguel.csprojResolveAssemblyReference.cache
